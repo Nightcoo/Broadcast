@@ -7,7 +7,7 @@ public class StationControl : MonoBehaviour
     [SerializeField] private int stationNo = 2;
     public Camera stationCam;
     private Animator stationCamAnimator;
-    private int rememberStation;
+    //private int rememberStation;
 
     void Start(){
 
@@ -15,16 +15,13 @@ public class StationControl : MonoBehaviour
         stationCamAnimator.SetInteger("Station", stationNo);
     }
  
-
-    // Update is called once per frame
     void Update()
     {
         //stationCamAnimator.SetInteger("Station", stationNo);
-
-        
-        if(Input.GetButtonDown("Jump")) LookBack();
-
-        if(Input.GetButtonUp("Jump")) ReturnFromLookBack();
+        stationNo = Mathf.Clamp(stationNo, 1, 3);
+ 
+        if(Input.GetKeyDown(KeyCode.E)) LookBack();
+        if(Input.GetKeyUp(KeyCode.E)) ReturnFromLookBack();
     }
 
     public void SwitchStation(int switchTo){
@@ -35,13 +32,17 @@ public class StationControl : MonoBehaviour
 
     void LookBack(){
 
-        rememberStation = stationNo;
-        stationCamAnimator.SetInteger("Station", 0);
+       // rememberStation = stationNo;
+        //stationCamAnimator.SetInteger("Station", 0);
+
+        stationCamAnimator.SetBool("lookBack", true);
     }
 
     void ReturnFromLookBack(){
 
-        stationNo = rememberStation;
-        stationCamAnimator.SetInteger("Station", stationNo);
+        //stationNo = rememberStation;
+        //stationCamAnimator.SetInteger("Station", stationNo);
+
+        stationCamAnimator.SetBool("lookBack", false);
     }
 }
