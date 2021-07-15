@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 //using TMPro;
 
+[RequireComponent(typeof(Button))]
 public class UIButton : MonoBehaviour {
 
     //public Sprite regular;
@@ -10,19 +12,10 @@ public class UIButton : MonoBehaviour {
     //public Sprite mouseClicked;
     //public TextMeshPro buttonText;
 
-    // Use this for initialization
-    void Start () {
-
-    }
-
-    // Update is called once per frame
-    void Update(){
-
-    }
-
     private void OnMouseDown(){
         
-        Debug.Log("CLicked");
+        Debug.Log("Clicked");
+        gameObject.GetComponent<Button>().onClick.Invoke();
     }
 
     private void OnMouseEnter(){

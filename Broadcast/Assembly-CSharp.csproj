@@ -36,6 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Packages\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
+     <Compile Include="Assets\Packages\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
+     <Compile Include="Assets\Packages\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
+     <Compile Include="Assets\Packages\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
      <Compile Include="Assets\Packages\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\Packages\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Packages\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -141,6 +145,7 @@
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
      <Compile Include="Assets\Scripts\ButtonHover.cs" />
      <Compile Include="Assets\Scripts\CamFollowMouse.cs" />
+     <Compile Include="Assets\Scripts\RevealNextButton.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\Scripts\StationControl.cs" />
      <Compile Include="Assets\Scripts\TakeSeat.cs" />
