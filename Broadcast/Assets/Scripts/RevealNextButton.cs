@@ -14,20 +14,17 @@ public class RevealNextButton : MonoBehaviour
     }
 
     public void RevealButton(){
-
-        Invoke("UnpressButton", 1);
-
+        
         //startPosition = transform.position;
         gameObject.GetComponent<Animator>().SetBool("Pressed", true);
         nextButton.SetBool("Reveal", true);
-
-        
     }
     
     public void UnpressButton(){
 
         gameObject.GetComponent<Animator>().SetBool("Pressed", false);
     }
+   
    /* void LateUpdate(){
 
         transform.localPosition += startPosition;
