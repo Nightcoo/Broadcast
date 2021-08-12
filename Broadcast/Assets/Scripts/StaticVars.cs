@@ -8,4 +8,5 @@ public class StaticVars : MonoBehaviour
     public static bool Lighting;
     public static bool redClouds;
     public static bool tapeNotPlaying;
+    public static int tapeHeld;
 }

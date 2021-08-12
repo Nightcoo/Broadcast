@@ -6,6 +6,7 @@ public class GameEventManager : MonoBehaviour
 {
 
     public GameObject skyLight;
+    
     void Update(){
         
     }
@@ -18,6 +19,7 @@ public class GameEventManager : MonoBehaviour
 
     }*/
 
+    #region - Lightning -
     public void ButtonCueLightning(){
 
         StartCoroutine(cueLightning());
@@ -34,5 +36,13 @@ public class GameEventManager : MonoBehaviour
         skyLight.GetComponent<AudioSource>().Play(); 
     }
 
+    #endregion
 
+    #region - TapePlayer -
+
+    public void PlayTape(){}
+
+    public void TapeFinish(){}
+
+    #endregion
 }
