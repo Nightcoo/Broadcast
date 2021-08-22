@@ -40,7 +40,16 @@ public class GameEventManager : MonoBehaviour
 
     #region - TapePlayer -
 
-    public void PlayTape(){}
+    public void PlayTape(){
+
+        int tapeBuffer;
+
+        tapeBuffer = StaticVars.tapePlaying;
+        StaticVars.tapePlaying = StaticVars.tapeHeld;
+        StaticVars.tapeHeld = tapeBuffer;
+
+        
+    }
 
     public void TapeFinish(){}
 
