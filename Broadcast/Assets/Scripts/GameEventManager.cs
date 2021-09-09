@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class GameEventManager : MonoBehaviour
 {
 
     public GameObject skyLight;
+    public VideoPlayer tapePlayer;
+    public VideoClip[] clips;
     
     void Update(){
         
@@ -42,13 +45,20 @@ public class GameEventManager : MonoBehaviour
 
     public void PlayTape(){
 
-        int tapeBuffer;
+        if(StaticVars.tapePlaying > 0) Debug.Log("Tape " + StaticVars.tapePlaying + " is playing");
 
-        tapeBuffer = StaticVars.tapePlaying;
-        StaticVars.tapePlaying = StaticVars.tapeHeld;
-        StaticVars.tapeHeld = tapeBuffer;
+        switch(StaticVars.tapePlaying){
 
-        
+            case 1:
+            tapePlayer.clip = clips[1];
+            break;
+
+            case 2:
+            tapePlayer.clip = clips[2];
+            break;
+        }
+
+        tapePlayer.Play();
     }
 
     public void TapeFinish(){}

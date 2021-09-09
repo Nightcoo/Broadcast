@@ -20,4 +20,20 @@ public class TapeInventory : MonoBehaviour
         tapeSprite.GetComponentInChildren<Text>().text = ""+StaticVars.tapeHeld;
         tapeSprite.SetActive(false);
     }
+
+    public void SwapTapes(){
+
+        int tapeBuffer;
+
+        tapeBuffer = StaticVars.tapePlaying;
+        StaticVars.tapePlaying = StaticVars.tapeHeld;
+        StaticVars.tapeHeld = tapeBuffer;
+
+        Debug.Log("Tape " + StaticVars.tapeHeld + " held");
+
+        if(StaticVars.tapeHeld == 0) tapeSprite.SetActive(false);
+        else tapeSprite.GetComponentInChildren<Text>().text = ""+StaticVars.tapeHeld;
+
+        AddTapeInventory();
+    }
 }

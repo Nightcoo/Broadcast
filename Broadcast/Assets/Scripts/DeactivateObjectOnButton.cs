@@ -12,7 +12,7 @@ public class DeactivateObjectOnButton : MonoBehaviour
    
     void Update(){
 
-       if(StaticVars.tapeHeld != grabTape.whichTape) ActivateThis();
+       if(StaticVars.tapeHeld != grabTape.whichTape && StaticVars.tapePlaying != grabTape.whichTape) ActivateThis();
     }
    
     public void DeactivateThis(){
