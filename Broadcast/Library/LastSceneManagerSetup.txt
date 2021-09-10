@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/WhiteBox.unity
+- path: Assets/Scenes/3D Models.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
