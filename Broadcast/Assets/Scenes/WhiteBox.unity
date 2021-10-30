@@ -1689,6 +1689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SeatedCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1384350046729435196, guid: f84269a238a72f94bbded5248a1c39a4,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1384350046729435198, guid: f84269a238a72f94bbded5248a1c39a4,
         type: 3}
       propertyPath: m_Pivot.x

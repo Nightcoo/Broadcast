@@ -11,8 +11,9 @@ public class StationControl : MonoBehaviour
 
     void Start(){
 
-        stationCamAnimator = stationCam.GetComponent<Animator>();
+        stationCamAnimator = stationCam.GetComponentInParent<Animator>(); //Line Changed for the new model scene
         stationCamAnimator.SetInteger("Station", stationNo);
+        Debug.Log("Start");
     }
  
     void Update()
@@ -24,9 +25,9 @@ public class StationControl : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.E)) ReturnFromLookBack();
     }
 
-    public void SwitchStation(int switchTo){
+    public void SwitchStation(int swapTo){
 
-        stationNo += switchTo;
+        stationNo += swapTo;
         stationCamAnimator.SetInteger("Station", stationNo);
     }
 

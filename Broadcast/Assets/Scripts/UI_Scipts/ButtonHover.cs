@@ -21,6 +21,8 @@ public class ButtonHover : MonoBehaviour
 
     public void Transistion(){
 
+        Debug.Log("Before");
         gameManager.GetComponent<StationControl>().SwitchStation(toWhere);
+        Debug.Log("After");
     }
 }
