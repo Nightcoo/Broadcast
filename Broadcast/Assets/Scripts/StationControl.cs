@@ -9,6 +9,9 @@ public class StationControl : MonoBehaviour
     private Animator stationCamAnimator;
     //private int rememberStation;
 
+    public GameObject upButton;
+    public GameObject downButton;
+
     void Start(){
 
         stationCamAnimator = stationCam.GetComponentInParent<Animator>(); //Line Changed for the new model scene
@@ -29,6 +32,9 @@ public class StationControl : MonoBehaviour
 
         stationNo += swapTo;
         stationCamAnimator.SetInteger("Station", stationNo);
+
+        if(stationNo == 3) downButton.SetActive(true);
+        else downButton.SetActive(false);
     }
 
     void LookBack(){
@@ -46,4 +52,19 @@ public class StationControl : MonoBehaviour
 
         stationCamAnimator.SetBool("lookBack", false);
     }
+
+    public void RevealUpButton(){
+
+        stationCamAnimator.SetBool("lookDown", true);
+        downButton.SetActive(false);
+        upButton.SetActive(true);
+    }
+
+    public void RevealDownButton(){
+
+        stationCamAnimator.SetBool("lookDown", false);
+        downButton.SetActive(true);
+        upButton.SetActive(false);
+    }
 }
+
