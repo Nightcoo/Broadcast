@@ -19,7 +19,7 @@ public class UIButton : MonoBehaviour {
     }
 
     private void OnMouseEnter(){
-
+        // Debug.Log("hovering");
     }
 
     private void OnMouseExit(){
