@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Utility\CurveControlledBob.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\PlayAnim.cs" />
      <Compile Include="Assets\Packages\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
      <Compile Include="Assets\Packages\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneControlSurfaceAnimator.cs" />
@@ -156,7 +157,7 @@
      <Compile Include="Assets\Packages\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Packages\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
-     <Compile Include="Assets\Scripts\PlayAnim.cs" />
+     <Compile Include="Assets\Scripts\InputKeyboard.cs" />
      <None Include="Assets\Packages\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
@@ -183,6 +184,7 @@
      <None Include="Assets\Packages\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Packages\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\Packages\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\ScreenTextShader.shader" />
      <None Include="Assets\Packages\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Packages\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Packages\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />

@@ -26,6 +26,8 @@ public class StationControl : MonoBehaviour
  
         if(Input.GetKeyDown(KeyCode.E)) LookBack();
         if(Input.GetKeyUp(KeyCode.E)) ReturnFromLookBack();
+
+        if(InputKeyboard.usingKeyboard == false) stationCamAnimator.SetBool("usingKeyboard", false);
     }
 
     public void SwitchStation(int swapTo){
@@ -65,6 +67,11 @@ public class StationControl : MonoBehaviour
         stationCamAnimator.SetBool("lookDown", false);
         downButton.SetActive(true);
         upButton.SetActive(false);
+    }
+
+    public void LookatScreen(){
+
+        stationCamAnimator.SetBool("usingKeyboard", true);
     }
 }
 
