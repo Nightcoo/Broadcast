@@ -59,16 +59,16 @@ public class InputKeyboard : MonoBehaviour
        else if(Input.GetKeyDown(KeyCode.Z)) keyboardText = keyboardText + "z";
 
         //numbers
-       else if(Input.GetKeyDown(KeyCode.Keypad0)) keyboardText = keyboardText + "0";
-       else if(Input.GetKeyDown(KeyCode.Keypad1)) keyboardText = keyboardText + "1";
-       else if(Input.GetKeyDown(KeyCode.Keypad2)) keyboardText = keyboardText + "2";
-       else if(Input.GetKeyDown(KeyCode.Keypad3)) keyboardText = keyboardText + "3";
-       else if(Input.GetKeyDown(KeyCode.Keypad4)) keyboardText = keyboardText + "4";
-       else if(Input.GetKeyDown(KeyCode.Keypad5)) keyboardText = keyboardText + "5";
-       else if(Input.GetKeyDown(KeyCode.Keypad6)) keyboardText = keyboardText + "6";
-       else if(Input.GetKeyDown(KeyCode.Keypad7)) keyboardText = keyboardText + "7";
-       else if(Input.GetKeyDown(KeyCode.Keypad8)) keyboardText = keyboardText + "8";
-       else if(Input.GetKeyDown(KeyCode.Keypad9)) keyboardText = keyboardText + "9";
+       else if(Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Alpha0)) keyboardText = keyboardText + "0";
+       else if(Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1)) keyboardText = keyboardText + "1";
+       else if(Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2)) keyboardText = keyboardText + "2";
+       else if(Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha3)) keyboardText = keyboardText + "3";
+       else if(Input.GetKeyDown(KeyCode.Keypad4) || Input.GetKeyDown(KeyCode.Alpha4)) keyboardText = keyboardText + "4";
+       else if(Input.GetKeyDown(KeyCode.Keypad5) || Input.GetKeyDown(KeyCode.Alpha5)) keyboardText = keyboardText + "5";
+       else if(Input.GetKeyDown(KeyCode.Keypad6) || Input.GetKeyDown(KeyCode.Alpha6)) keyboardText = keyboardText + "6";
+       else if(Input.GetKeyDown(KeyCode.Keypad7) || Input.GetKeyDown(KeyCode.Alpha7)) keyboardText = keyboardText + "7";
+       else if(Input.GetKeyDown(KeyCode.Keypad8) || Input.GetKeyDown(KeyCode.Alpha8)) keyboardText = keyboardText + "8";
+       else if(Input.GetKeyDown(KeyCode.Keypad9) || Input.GetKeyDown(KeyCode.Alpha9)) keyboardText = keyboardText + "9";
 
         //space
        else if(Input.GetKeyDown(KeyCode.Space)) keyboardText = keyboardText + " ";
