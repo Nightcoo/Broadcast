@@ -32,9 +32,10 @@ public class GameEventManager : MonoBehaviour
         int lightningDist = Random.Range(0, 10);
         Debug.Log(lightningDist);
         
+        //lights up the screen with a bright white light
+        skyLight.GetComponent<Animation>().Play(); 
         
-        skyLight.GetComponent<Animation>().Play();
-
+        // waits n amount of seconds before playing thunder
         yield return new WaitForSeconds(lightningDist);
         skyLight.GetComponent<AudioSource>().Play(); 
     }
