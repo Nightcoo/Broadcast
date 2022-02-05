@@ -7,6 +7,7 @@ public class SpawnWeatherTest : MonoBehaviour
     public int oncomingDirection = 0;   // N=1 E=2 S=3 W=4
     public Transform[] cardinals;
     public GameObject[] weatherEvent;
+    public Vector2 spawnInterval;
 
     public static bool eventAvoided;
 
@@ -59,7 +60,7 @@ public class SpawnWeatherTest : MonoBehaviour
 
     IEnumerator DelayBeforeNextEvent(){
 
-        int t = Random.Range(5, 10);
+        float t = Random.Range(spawnInterval.x, spawnInterval.y);
 
         yield return new WaitForSeconds(t);
         Debug.Log("Starting Next event");

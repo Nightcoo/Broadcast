@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8718048365392609316}
   - component: {fileID: 2094725092991521356}
   - component: {fileID: 6666902275417968770}
+  - component: {fileID: 6145136997308694471}
   m_Layer: 0
   m_Name: wind_cloud
   m_TagString: Untagged
@@ -287,3 +288,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   regSpeed: 20
   slowSpeed: 5
+--- !u!136 &6145136997308694471
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8718048365392609315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 4.64
+  m_Direction: 1
+  m_Center: {x: 0, y: -1.64, z: 0}

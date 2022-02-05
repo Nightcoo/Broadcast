@@ -2351,6 +2351,7 @@ MonoBehaviour:
   - {fileID: 5447293005789123407, guid: 3a8bc18ff88ac94479b3502be4eef5e9, type: 3}
   - {fileID: 8148327221544541977, guid: 322b53f619016a749beb8a3c3bfbd048, type: 3}
   - {fileID: 8718048365392609315, guid: beb44bea32c2f7d488cb6c9f59882b0d, type: 3}
+  spawnInterval: {x: 5, y: 5}
 --- !u!4 &1350428902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eb4fbd8a159040b4ebf4a21cbcccd4b4,
@@ -3234,7 +3235,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22420
+  m_Name: pb_Mesh32566
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
