@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Seat
   - Grabbable
+  - Fire
+  - Slow
   layers:
   - Default
   - TransparentFX

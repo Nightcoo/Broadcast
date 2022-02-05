@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 5447293005789123406}
   - component: {fileID: 3973862296587333082}
   - component: {fileID: 3083715055358327668}
+  - component: {fileID: -265722838820897910}
   m_Layer: 0
   m_Name: Fog_wave
   m_TagString: Untagged
@@ -4990,7 +4991,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bf2760b235c11459d29ed01c588df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  regSpeed: 20
+  slowSpeed: 5
+--- !u!65 &-265722838820897910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5447293005789123407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5447293006349398291
 GameObject:
   m_ObjectHideFlags: 0
