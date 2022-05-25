@@ -13,15 +13,17 @@ public class StaticVars : MonoBehaviour
 
     public static void FogCloudUnprotected(){   // this should expose you to fog monsters (for a time?)
 
-        float t = Time.time;
-        float f;
-        do{                     // this loop may break everything and alos be too fast
+        // float t = Time.time;
+        // float f;
+        // do{                     // this loop may break everything and alos be too fast
         
-            f = Time.time - t;
+        //     f = Time.time - t;
 
-            RenderSettings.fogDensity = Mathf.Lerp(RenderSettings.fogDensity, .1f, t);
+        //     RenderSettings.fogDensity = Mathf.Lerp(RenderSettings.fogDensity, .1f, t);
         
-        }while( f < 1); 
+        // }while( f < 1); 
+
+        RenderSettings.fogDensity = .1f;
     }
     public static void RedLightUnprotected(){       // this should deactivate your tracking hardware (for a time?)
 
