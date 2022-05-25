@@ -32,5 +32,7 @@ public class MoveWeather : MonoBehaviour
     void OnTriggerExit(Collider col){
 
        if(col.gameObject.tag == "Slow") currentSpeed = regSpeed;
+
+       if(col.gameObject.tag =="ExistenceZone") Destroy(gameObject);
     }
 }

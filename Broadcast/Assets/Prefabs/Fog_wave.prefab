@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 3973862296587333082}
   - component: {fileID: 3083715055358327668}
   - component: {fileID: -265722838820897910}
+  - component: {fileID: 5386399993247147404}
   m_Layer: 0
   m_Name: Fog_wave
   m_TagString: Untagged
@@ -5006,6 +5007,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 135.15848, y: 75.87654, z: 5.459564}
   m_Center: {x: -0.05325197, y: -29.127182, z: 30.13002}
+--- !u!114 &5386399993247147404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5447293005789123407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe0ae20ac74b25499870c70367b138b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weatherEventType: 1
 --- !u!1 &5447293006349398291
 GameObject:
   m_ObjectHideFlags: 0

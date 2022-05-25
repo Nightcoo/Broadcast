@@ -8,6 +8,8 @@ TagManager:
   - Grabbable
   - Fire
   - Slow
+  - ControlRoom
+  - ExistenceZone
   layers:
   - Default
   - TransparentFX
