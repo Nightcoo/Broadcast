@@ -25,6 +25,12 @@ public class StaticVars : MonoBehaviour
 
         RenderSettings.fogDensity = .1f;
     }
+
+    public static void FogCloudUnprotectedExit(){
+
+        RenderSettings.fogDensity = .01f;
+    }
+
     public static void RedLightUnprotected(){       // this should deactivate your tracking hardware (for a time?)
 
         

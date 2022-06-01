@@ -10,11 +10,11 @@ public class Weather_Impact : MonoBehaviour
 
         if(col.gameObject.tag == "ControlRoom"){
 
-            
             switch (weatherEventType){
 
                 case 1:
-
+                    
+                    // gameObject.GetComponent<ParticleSystem>().externalForces.influenceFilter
                     StaticVars.FogCloudUnprotected();
 
                 break;
@@ -32,10 +32,32 @@ public class Weather_Impact : MonoBehaviour
                     StaticVars.WindUnprotected();
 
                 break;
-            }
-            
-            
-            
+            }            
+        }
+    }
+
+    void OnTriggerExit(){
+
+        switch (weatherEventType){
+
+                case 1:
+
+                    // StaticVars.FogCloudUnprotected();
+                    StaticVars.FogCloudUnprotectedExit();
+
+                break;
+
+                case 2:
+
+                   //StaticVars.RedLightUnprotected(); 
+
+                break;
+
+                case 3:
+
+                    // StaticVars.WindUnprotected();
+
+                break;
         }
     }
 }
