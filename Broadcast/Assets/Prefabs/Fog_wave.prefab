@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: -265722838820897910}
   m_Layer: 0
   m_Name: Fog_wave
-  m_TagString: Untagged
+  m_TagString: Weather
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4993,6 +4993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   regSpeed: 20
   slowSpeed: 5
+  WeatherType: Fog Wave
 --- !u!65 &-265722838820897910
 BoxCollider:
   m_ObjectHideFlags: 0

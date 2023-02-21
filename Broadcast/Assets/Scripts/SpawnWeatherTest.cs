@@ -63,7 +63,7 @@ public class SpawnWeatherTest : MonoBehaviour
         float t = Random.Range(spawnInterval.x, spawnInterval.y);
 
         yield return new WaitForSeconds(t);
-        Debug.Log("Starting Next event");
+        // Debug.Log("Starting Next event");
         SetPositionAndSpawn();
     }
 

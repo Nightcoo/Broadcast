@@ -160,6 +160,7 @@
      <Compile Include="Assets\Packages\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Packages\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+     <Compile Include="Assets\Scripts\StationNo.cs" />
      <None Include="Assets\Packages\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />

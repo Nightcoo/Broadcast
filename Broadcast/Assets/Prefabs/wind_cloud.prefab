@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 6145136997308694471}
   m_Layer: 0
   m_Name: wind_cloud
-  m_TagString: Untagged
+  m_TagString: Weather
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,6 +288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   regSpeed: 20
   slowSpeed: 5
+  WeatherType: High Winds
 --- !u!136 &6145136997308694471
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8310099116973885428}
   m_Layer: 0
   m_Name: red_light_cloud
-  m_TagString: Untagged
+  m_TagString: Weather
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,6 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   regSpeed: 20
   slowSpeed: 5
+  WeatherType: Red Cloud
 --- !u!1 &8148327222166666532
 GameObject:
   m_ObjectHideFlags: 0

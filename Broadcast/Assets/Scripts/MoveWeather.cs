@@ -10,6 +10,8 @@ public class MoveWeather : MonoBehaviour
     private float currentSpeed;
     private Rigidbody rb;
 
+    public string WeatherType;
+
     void Awake()
     {
         rb = gameObject.GetComponent<Rigidbody>();
