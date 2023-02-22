@@ -80,6 +80,7 @@
      <Compile Include="Assets\Packages\Standard Assets\Utility\CurveControlledBob.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\PlayAnim.cs" />
+     <Compile Include="Assets\Animation\Switch\Forward_Reverse.cs" />
      <Compile Include="Assets\Packages\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
      <Compile Include="Assets\Packages\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneControlSurfaceAnimator.cs" />
@@ -161,7 +162,8 @@
      <Compile Include="Assets\Packages\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Packages\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
-     <Compile Include="Assets\Animation\Switch\Forward_Reverse.cs" />
+     <Compile Include="Assets\Scripts\OneUse\ToggleLight.cs" />
+     <Compile Include="Assets\Scripts\OneUse\Toggle_Windows.cs" />
      <None Include="Assets\Packages\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
