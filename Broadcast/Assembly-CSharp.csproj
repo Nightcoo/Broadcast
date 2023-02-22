@@ -107,6 +107,7 @@
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
      <Compile Include="Assets\Packages\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\Scripts\StationNo.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs" />
      <Compile Include="Assets\Packages\Standard Assets\Utility\WaypointCircuit.cs" />
@@ -160,7 +161,7 @@
      <Compile Include="Assets\Packages\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
      <Compile Include="Assets\Packages\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Packages\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
-     <Compile Include="Assets\Scripts\StationNo.cs" />
+     <Compile Include="Assets\Animation\Switch\Forward_Reverse.cs" />
      <None Include="Assets\Packages\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />

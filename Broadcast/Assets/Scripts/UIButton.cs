@@ -14,7 +14,7 @@ public class UIButton : MonoBehaviour {
 
     private void OnMouseDown(){
         
-        Debug.Log("Clicked");
+        // Debug.Log("Clicked");
         gameObject.GetComponent<Button>().onClick.Invoke();
     }
 
