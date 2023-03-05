@@ -185,6 +185,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 return;
             }
+            
             if (m_CharacterController.velocity.magnitude > 0 && m_CharacterController.isGrounded)
             {
                 m_Camera.transform.localPosition =
@@ -198,6 +199,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 newCameraPosition = m_Camera.transform.localPosition;
                 newCameraPosition.y = m_OriginalCameraPosition.y - m_JumpBob.Offset();
             }
+           
             m_Camera.transform.localPosition = newCameraPosition;
         }
 
