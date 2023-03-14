@@ -35,7 +35,7 @@ public class CamFollowMouse : MonoBehaviour
 
         mousePos = new Vector3(Mathf.Clamp(mousePos.x, -xMaxRot, xMaxRot), Mathf.Clamp(mousePos.y, -yMaxRot, yMaxRot), 1); //locks values within a Max possible
 
-        mousePos = new Vector3(mousePos.x * xMaxRot, mousePos.y * yMaxRot, 1); //supposed to scale the mous position to the confines but it doesn't work
+        mousePos = new Vector3(mousePos.x * xMaxRot, mousePos.y * yMaxRot, 1); //scales the mouse position to the confines
 
         //Vector3 relativePos = mousePos - transform.position;
 

@@ -2145,7 +2145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xMaxRot: 0.2
-  yMaxRot: 0.6
+  yMaxRot: 0.5
   mousePos: {x: 0, y: 0, z: 0}
 --- !u!114 &943567444
 MonoBehaviour:
@@ -4469,7 +4469,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52684
+  m_Name: pb_Mesh32822
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
