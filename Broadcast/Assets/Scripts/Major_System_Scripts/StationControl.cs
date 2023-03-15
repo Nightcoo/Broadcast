@@ -24,10 +24,14 @@ public class StationControl : MonoBehaviour
         //stationCamAnimator.SetInteger("Station", stationNo);
         stationNo = Mathf.Clamp(stationNo, 1, 3);
  
-        if(Input.GetKeyDown(KeyCode.X)) LookBack();
-        if(Input.GetKeyUp(KeyCode.X)) ReturnFromLookBack();
+        if(Input.GetKeyDown(KeyCode.S) || (Input.GetKeyDown(KeyCode.DownArrow))) LookBack();
+        if(Input.GetKeyUp(KeyCode.S) || (Input.GetKeyUp(KeyCode.DownArrow))) ReturnFromLookBack();
 
         if(InputKeyboard.usingKeyboard == false) stationCamAnimator.SetBool("usingKeyboard", false);
+
+        //Key Command Inputs for Camera Transition
+        if(Input.GetKeyDown(KeyCode.D) || (Input.GetKeyDown(KeyCode.RightArrow))) SwitchStation(1);
+        else if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.LeftArrow))) SwitchStation(-1);
     }
 
     public void SwitchStation(int swapTo){
@@ -35,7 +39,7 @@ public class StationControl : MonoBehaviour
         stationNo += swapTo;
         stationCamAnimator.SetInteger("Station", stationNo);
 
-        if(stationNo == 3) downButton.SetActive(true);
+        if(stationNo >= 3) RevealDownButton();//downButton.SetActive(true);
         else downButton.SetActive(false);
     }
 

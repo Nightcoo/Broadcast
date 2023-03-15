@@ -36,7 +36,7 @@ public class PlayAnim : MonoBehaviour
                 anim ["open_drawer"].speed = 1;
                 anim.Play();
                 which = 1; 
-                Debug.Log("drawer open");
+                //Debug.Log("drawer open");
                 break;
 
             case 1:
@@ -45,7 +45,7 @@ public class PlayAnim : MonoBehaviour
                 anim ["open_drawer"].speed = -1;
                 anim.Play();
                 which = 0; 
-                Debug.Log("drawer closed");
+                //Debug.Log("drawer closed");
                 break;
         }
 

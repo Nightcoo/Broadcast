@@ -1,28 +1,22 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof (Button))]
 public class ButtonHover : MonoBehaviour
 {
-    Button Right;
-    public int toWhere;
-    public GameObject gameManager;
-    void Update()
+    Button butt;
+
+    void Awake()
     {
-        //if(Right.OnMouseEnter(true))
+       // Debug.Log("woke mob");
+        butt = gameObject.GetComponent<Button>();
     }
 
-    void OnMouseEnter(){
+    public void HoverTrigger(){
 
-        //Right.OnClick();
-        Right.onClick.Invoke();
-    }
-
-    public void Transistion(){
-
-        Debug.Log("Before");
-        gameManager.GetComponent<StationControl>().SwitchStation(toWhere);
-        Debug.Log("After");
+       // Debug.Log("hover triggered");
+        butt.onClick.Invoke();
     }
 }
