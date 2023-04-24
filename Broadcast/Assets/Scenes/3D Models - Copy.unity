@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230717691}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -2161,18 +2161,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1059717343}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &898601028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898601027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70fc6d1b64baa854a998f2a83d8cabdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &898601029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2190,7 +2178,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 898601028}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: ButtonHover, Assembly-CSharp
           m_MethodName: HoverTrigger
           m_Mode: 1
@@ -2482,6 +2470,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 1384350046222163989, guid: f84269a238a72f94bbded5248a1c39a4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 372
+      objectReference: {fileID: 0}
     - target: {fileID: 1384350046222163990, guid: f84269a238a72f94bbded5248a1c39a4,
         type: 3}
       propertyPath: gameManager
@@ -2616,6 +2609,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384350046971645684, guid: f84269a238a72f94bbded5248a1c39a4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -371
       objectReference: {fileID: 0}
     - target: {fileID: 1384350046971645685, guid: f84269a238a72f94bbded5248a1c39a4,
         type: 3}
@@ -2762,7 +2760,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -3470,7 +3468,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270346155}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.25154567, z: 0, w: 0.96784544}
   m_LocalPosition: {x: 0, y: 20.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3480,7 +3478,7 @@ Transform:
   - {fileID: 1184332558}
   m_Father: {fileID: 0}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 29.138, z: 0}
 --- !u!1 &1306835622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,7 +3997,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636755661}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.25154567, z: 0, w: 0.96784544}
   m_LocalPosition: {x: 0, y: 18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4009,7 +4007,7 @@ Transform:
   - {fileID: 450704306}
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 29.138, z: 0}
 --- !u!1001 &1686763280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4602,7 +4600,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32822
+  m_Name: pb_Mesh22530
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5362,18 +5360,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1059717343}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2032134404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032134403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70fc6d1b64baa854a998f2a83d8cabdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2032134405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5391,7 +5377,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2032134404}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: ButtonHover, Assembly-CSharp
           m_MethodName: HoverTrigger
           m_Mode: 1
